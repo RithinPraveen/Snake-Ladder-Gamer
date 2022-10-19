@@ -1,0 +1,208 @@
+body {
+  /* padding: 1%; */
+  background-color: rgb(48, 48, 48);
+  background-image: url(./imgs/bambi-jungle-1920x1080-1482501354\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+.pageBox {
+  margin: 1rem;
+  border-radius: 2rem;
+  color: rgb(255, 255, 255);
+  width: 83rem;
+  /* height: 41.6rem; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(  10, 1fr); */
+  background-color: rgba(102, 116, 185, 0.201);
+  box-shadow: 0 4px 30px rgba(23, 23, 23, 0.356);
+  backdrop-filter: blur(2px);
+    
+
+}
+
+.game-area {
+  margin: 1%;
+  margin-right: 3%;
+  /* background-color: bisque; */
+}
+
+.side-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  /* background-color: chartreuse; */
+}
+
+.info-area {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 50px 0px 0px 50px;
+  width: 38rem;
+  grid-column: 2;
+  grid-row: span 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 120px;
+  background-color: rgba(30, 17, 64, 0.631);
+  backdrop-filter: blur(1px);
+
+  background-image: url(./imgs/1404.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  background-blend-mode: multiply;
+
+  box-shadow: 10PX 10px 5px rgb(23, 23, 23);
+
+  
+}
+
+.title {
+  border-radius: 50px 0px 0px 0px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  grid-column: span 3;
+  grid-row: 1;
+  background-color: rgba(19, 14, 56, 0.423);
+  
+
+}
+
+.button-area {
+  border-radius: 20px;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  text-align: center;
+  width:30rem ;
+  grid-column: 2;
+  grid-row: 2;
+  background-color: rgba(39, 79, 25, 0.55);
+
+ 
+
+}
+.button-area:hover{
+  box-shadow: 0PX 0px 20px rgba(255, 255, 255, 0.756);
+}
+
+.snakeladder{
+  position: absolute;
+}
+
+#ladder1{
+  position:absolute;
+  
+  width: 60px;
+  height: 199px;
+  rotate: -33deg;
+  margin-top: 430px;
+  margin-left: 1190px;
+  opacity: 85%;
+}
+
+#ladder2{
+  position:absolute;
+  
+  width: 60px;
+  height: 148px;
+  rotate: -44deg;
+  margin-top: 424px;
+  margin-left: 868px;
+  opacity: 90%;
+}
+
+#ladder3{
+  position:absolute;
+  
+  width: 60px;
+  height: 100px;
+  rotate: 0deg;
+  margin-top: 315px;
+  margin-left: 62rem;
+  opacity: 90%;
+}
+
+#ladder4{
+  position:absolute;
+  
+  width: 60px;
+  height: 200px;
+  rotate: -30deg;
+  margin-top: 10.5rem;
+  margin-left: 50rem;
+  opacity: 90%;
+}
+
+#ladder5{
+  position:absolute;
+  
+  width: 60px;
+  height: 140px;
+  rotate: 44deg;
+  margin-top: 6.2rem;
+  margin-left: 73.9rem;
+  opacity: 90%;
+}
+
+
+
+
+#snake1{
+  position:absolute;
+ 
+  width: 30px;
+  height: 130px;
+  rotate: 20deg;
+  margin-top: 31rem;
+  margin-left: 49rem;
+  opacity: 90%;
+}
+
+#snake2{
+  position:absolute;
+ 
+  width: 65px;
+  height: 450px;
+  rotate: 40deg;
+  margin-top: 14.5rem;
+  margin-left: 65rem;
+  opacity: 80%;
+}
+
+#snake3{
+  position:absolute;
+  
+  width: 50px;
+  height: 270px;
+  rotate: 0deg;
+  margin-top: 14.5rem;
+  margin-left: 45.5rem;
+  opacity: 80%;
+}
+
+#snake4{
+  position:absolute;
+ 
+  width: 40px;
+  height: 220px;
+  rotate: 30deg;
+  margin-top: 5.5rem;
+  margin-left: 62.5rem;
+  opacity: 80%;
+}
+
+#snake5{
+  position:absolute;
+ 
+  width: 50px;
+  height: 330px;
+  rotate: 10deg;
+  margin-top: 2rem;
+  margin-left: 44rem;
+  opacity: 80%;
+}

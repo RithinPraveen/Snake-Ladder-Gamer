@@ -1,0 +1,21 @@
+
+
+
+#dice{
+    width: 100px ;
+    height: 100px ;
+    border-radius: 20px;
+}
+#dice:hover{
+    mix-blend-mode: difference;
+}
+
+.player1{
+    color: black;
+    background-color: rgba(120, 123, 120, 0.715) ;
+}
+.player2{
+    
+    color: white;
+    background-color: rgba(0, 0, 0, 0.874);
+}
