@@ -17,20 +17,15 @@
     /* background-color: blue; */
   }
 
-.main-box div{
-    width:auto;
-    height: 3.7em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* font-size: 1em; */
+  
+  .cell{
     text-align: center;
-    color: #ffffff6f;
-    
-    background-color: rgb(54, 17, 93); 
-  box-shadow: -5PX 5px 5px rgb(9, 9, 9);
-    
+    color: #8cff00;
+    background-color: rgba(54, 17, 93, 0.781); 
+    box-shadow: -5PX 5px 5px rgb(9, 9, 9);
   }
-  
-
-  
+  .grid{
+    width: 60px;
+    height: 59px;
+  }
+ 

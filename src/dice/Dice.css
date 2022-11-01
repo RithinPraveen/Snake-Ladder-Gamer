@@ -1,21 +1,30 @@
-
-
-
-#dice{
-    width: 100px ;
-    height: 100px ;
+.dice {
+    width: 100px;
+    height: 100px;
     border-radius: 20px;
-}
-#dice:hover{
-    mix-blend-mode: difference;
+    animation-name: rotate;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
 }
 
-.player1{
-    color: black;
-    background-color: rgba(120, 123, 120, 0.715) ;
+.dice:hover {
+    width: 90px;
+    height: 90px;
+    mix-blend-mode: difference;
+    animation-play-state: running;
 }
-.player2{
-    
-    color: white;
-    background-color: rgba(0, 0, 0, 0.874);
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#diceNo {
+    color: snow;
 }

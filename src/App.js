@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import GameBox from './gameBox/GameBox';
 import GameDice from './dice/GameDice';
@@ -7,7 +7,43 @@ import snake from "./imgs/snake.png"
 
 
 
+let numOfPlayers = 4
+let player_Icon = ["🥎", "⚽", "🏀", "🎱"]
+let player_Name = ["Siva", "Suman", "Ravi", "Ram"]
+
+
 function App() {
+  
+
+  const [player1, setPlayer1] = useState(1);
+  const [player2, setPlayer2] = useState(1);
+  const [player3, setPlayer3] = useState(1);
+  const [player4, setPlayer4] = useState(1);
+
+
+
+  let player_Pos = [player1, player2, player3, player4]
+  let player_State = [setPlayer1, setPlayer2, setPlayer3, setPlayer4]
+
+  let allPlayers = []
+  for (let num = 0; num < numOfPlayers; num++) {
+    allPlayers.push(`player${num + 1}`)
+  }
+
+  let totalPlayers = []
+
+  for (let index = 0; index < numOfPlayers; index++) {
+    totalPlayers.push({
+      tag: index + 1,
+      playerID: allPlayers[index],
+      playerIcon: player_Icon[index],
+      playerName: player_Name[index],
+      playerPos: player_Pos[index],
+      playerState: player_State[index]
+    })
+  }
+  console.log(totalPlayers);
+
   return (
     <div>
       <div className="pageBox">
@@ -15,21 +51,22 @@ function App() {
           <div className="info-area">
             <div className="title">
 
-              <h1>SNAKE & LADDER</h1>
+              <h1>Snake  And  Ladder</h1>
 
             </div>
 
             <div className="button-area">
-
-              <GameDice />
-
+              <GameDice
+                TotalPlayers={totalPlayers}
+              />
             </div>
           </div>
         </div>
         <div className="game-area">
 
-          <GameBox></GameBox>
-
+          <GameBox
+            TotalPlayers={totalPlayers}
+          />
         </div>
         <div className="snakeladder">
           <img src={ladder} alt="ladder1" id='ladder1' />
