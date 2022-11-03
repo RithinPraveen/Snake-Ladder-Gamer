@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './App2.css'
+import './App.css'
 import GameDice from './dice/GameDice';
 import ladder from "./imgs/ladder.png"
 import snake from "./imgs/snake.png"
@@ -11,7 +11,7 @@ let player_Icon = ["🥎", "⚽", "🏀", "🎱", "🏈", "🏈", "🏈", "🏈"
 let player_Name = ["Siva", "Suman", "Ravi", "Ram", "Gokul", "Gokul", "Gokul", "Gokul",]
 
 
-function App2() {
+function App() {
   let player_Pos = []
   for (let num = 0; num < numOfPlayers; num++) {
     player_Pos.push({ Pos: 1, id: num + 1 })
@@ -55,4 +55,4 @@ function App2() {
   )
 }
 
-export default App2
+export default App
