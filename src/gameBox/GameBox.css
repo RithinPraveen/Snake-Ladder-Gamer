@@ -21,8 +21,8 @@
   .cell{
     text-align: center;
     color: #8cff00;
-    background-color: rgba(54, 17, 93, 0.781); 
-    box-shadow: -5PX 5px 5px rgb(9, 9, 9);
+    background-color: rgba(46, 18, 85, 0.748); 
+    box-shadow: -6PX 6px 6px rgba(9, 9, 9, 0.9);
   }
   .grid{
     width: 60px;

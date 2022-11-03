@@ -6,12 +6,12 @@
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
     animation-play-state: paused;
+    mix-blend-mode:color-dodge;
 }
 
 .dice:hover {
-    width: 90px;
-    height: 90px;
-    mix-blend-mode: difference;
+    
+    mix-blend-mode:normal;
     animation-play-state: running;
 }
 
@@ -28,3 +28,114 @@
 #diceNo {
     color: snow;
 }
+
+.reset {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    animation-name: rotate;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+.reset:hover {
+    
+    mix-blend-mode: color-dodge;
+    
+    
+}
+
+.PageBox {
+    
+    
+    color: rgb(255, 255, 255);
+    /* width: 83rem; */
+    /* height: 41.6rem; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* background-color: chartreuse; */
+   /* grid-template-rows: repeat(  10, 1fr);  */
+    
+      
+  
+  }
+
+.game-area {
+    width: 400px;
+    /* height: 100px; */
+    margin: 1%;
+    margin-right: 18%;
+    /* background-color: bisque; */
+  }
+  
+  .side-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:10px;
+    /* background-color: rgb(106, 0, 255); */
+  }
+  
+  .info-area {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 50px 0px 0px 50px;
+    width: 38rem;
+    /* height: 37rem; */
+    grid-column: 2;
+    grid-row: span 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px;
+    background-color: rgba(10, 22, 3, 0.603);
+    backdrop-filter: blur(1px);
+  
+    background-image: url(../imgs/1404.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-blend-mode: multiply;
+  
+    box-shadow: 10PX 10px 6px rgba(13, 13, 13, 0.813);
+  
+    
+  }
+  
+  .title {
+    color: rgb(0, 0, 0);
+    border-radius: 50px 0px 0px 0px;
+    font-family:'Snake';
+    font-size: 20px;
+    text-align: center;
+    grid-column: span 3;
+    grid-row: 1;
+    background-color: rgba(102, 255, 0, 0.609);
+    backdrop-filter: blur(1px);
+    
+  
+  }
+  .title h1{
+    margin: 0%;
+  }
+  
+  .button-area {
+    border-radius: 20px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    text-align: center;
+    width:30rem ;
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgba(5, 2, 31, 0.585);
+    backdrop-filter: blur(1px);
+    
+   
+  
+  }
+  .button-area:hover{
+    box-shadow: 0PX 0px 20px rgba(255, 255, 255, 0.756);
+  }
+
+  .playerSpan{
+    font-weight: bolder;
+    font-family: system-ui, -apple-system}

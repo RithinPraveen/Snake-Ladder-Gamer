@@ -1,13 +1,13 @@
 import React from 'react'
 
 
-function CellValues({ count, playerIcon, player1icon, player2icon, player3icon, player4icon }) {
+function CellValues({ count, playerIcon, PlayerPoss }) {
   
   return (
     <div className='box'>
       <div>{count}</div>
       {playerIcon.map((val, key) =>
-        <span>{playerIcon[key].playerPos === count ? playerIcon[key].playerIcon : ''}</span>
+        <span key={key} >{PlayerPoss[key].Pos === count ? playerIcon[key].playerIcon : ''}</span>
       )}
     </div>
   )

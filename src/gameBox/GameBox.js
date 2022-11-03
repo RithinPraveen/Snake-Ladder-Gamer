@@ -1,9 +1,11 @@
+
+
 import CellValues from './CellValues'
 import './GameBox.css'
 
 
 
-const GameBox = ({TotalPlayers}) => {
+const GameBox = ({TotalPlayers,PlayerPoss}) => {
 
 
     let arr = []
@@ -25,12 +27,13 @@ const GameBox = ({TotalPlayers}) => {
             <div className="game-box">
                 <div className="main-box">
                     {arr.map(val =>
-                        <div className="cell" id={val.toString()}>
+                        <div key={val} className="cell" id={val.toString()}>
                             <div className="grid">
                                 <CellValues
                                     key={val}
                                     count={val}
                                     playerIcon={TotalPlayers}
+                                    PlayerPoss={PlayerPoss}
                                 />
                             </div>
                         </div>
